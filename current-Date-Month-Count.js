@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     currentDateSelector.textContent = currentDate;// в селектор даты, задаем текстовое значение элемента равное текущей дате
 
-    // с помощью switch перебираем индекс месяца и устанавливаем название месяца в кириллице
-    // у января index = 0
+    // с помощью конструкции switch сравниваем каждый индекс месяца с текущим и устанавливаем название месяца в кириллице
     switch (currentMonth) {
         case 0:
             currentMonthSelector.textContent = ' января';// задаем текстовым значением название месяца в селектор месяца
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // с помошью switch перебираем index текущего дня  и определяем какое кол-во штук осталось
+    // с помошью switch сравниваем index дня с текущим днем и определяем какое кол-во штук осталось
     switch (currentDay) {
         case 0:
             myCounterSelector.textContent = 7;// задаем текстовое значение в элемент
